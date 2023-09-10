@@ -1,10 +1,15 @@
-import React from "react";
+import PropTypes from "prop-types";
+
+Title.propTypes = {
+  children: PropTypes.any,
+  id: PropTypes.any,
+};
 
 function Title({ children, id }) {
   return (
     <h1
       id={id && id}
-      className="text-2xl font-bold underline underline-offset-8 decoration-4 mb-5 text-stone-900 dark:text-white"
+      className="text-2xl font-bold underline underline-offset-8 decoration-4 mb-5 text-stone-900 dark:text-white text-center"
     >
       {children}
     </h1>

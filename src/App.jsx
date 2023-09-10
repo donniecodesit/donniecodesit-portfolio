@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
-import Portfolio from "./components/Portfolio";
-import Timeline from "./components/Timeline";
+import Portfolio from "./components/portfolio/Portfolio";
+import Timeline from "./components/timeline/Timeline";
+import Skills from "./components/Skills";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -58,6 +59,7 @@ function App() {
     </svg>
   );
 
+  //"bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 min-h-screen font-inter
   return (
     <>
       <button
@@ -67,10 +69,11 @@ function App() {
       >
         {theme === "dark" ? sun : moon}
       </button>
-      <div className="bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
+      <div className="bg-[url(assets/bg_light.png)] dark:bg-[url(assets/bg_dark.png)] text-stone-900 dark:text-stone-300 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro />
           <Portfolio />
+          <Skills />
           <Timeline />
           <Contact />
           <Footer />

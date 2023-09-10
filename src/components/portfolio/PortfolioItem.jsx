@@ -1,13 +1,28 @@
-import React from "react";
+import PropTypes from "prop-types";
+
+PortfolioItem.propTypes = {
+  title: PropTypes.string,
+  imgUrl: PropTypes.string,
+  stack: PropTypes.array,
+  link: PropTypes.string,
+};
 
 function PortfolioItem({ title, imgUrl, stack, link }) {
   return (
-    <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
-      <img
-        src={imgUrl}
-        alt="portfolio"
-        className="w-full h-36 md:h-48 object-cover cursor-pointer"
-      />
+    <div
+      className={`border-2 border-stone-900 dark:border-white rounded-md overflow-hidden ${
+        link != "none" && "hover:border-purple-400 dark:hover:border-purple-400"
+      }`}
+    >
+      <a href={link} target="_blank" rel="noreferrer">
+        <img
+          src={imgUrl}
+          alt="portfolio"
+          className={`w-full h-36 md:h-48 object-cover ${
+            link != "none" && "cursor-pointer"
+          }`}
+        />
+      </a>
       <div className="w-full p-4">
         <h3 className="dark:text-white text-lg md:text-xl mb-2 md:mb-3 font-semibold">
           {title}
