@@ -14,15 +14,21 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
         link != "none" && "hover:border-purple-400 dark:hover:border-purple-400"
       }`}
     >
-      <a href={link} target="_blank" rel="noreferrer">
+      {link != "none" ? (
+        <a href={link} target="_blank" rel="noreferrer">
+          <img
+            src={imgUrl}
+            alt={title}
+            className={`w-full h-36 md:h-48 object-cover cursor-pointer`}
+          />
+        </a>
+      ) : (
         <img
           src={imgUrl}
-          alt="portfolio"
-          className={`w-full h-36 md:h-48 object-cover ${
-            link != "none" && "cursor-pointer"
-          }`}
+          alt={title}
+          className={`w-full h-36 md:h-48 object-cover`}
         />
-      </a>
+      )}
       <div className="w-full p-4">
         <h3 className="dark:text-white text-lg md:text-xl mb-2 md:mb-3 font-semibold">
           {title}
