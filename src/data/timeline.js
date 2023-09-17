@@ -4,7 +4,7 @@ export default [
     title: "A Web Developer Seeking Opportunity!",
     duration: "",
     details: [
-      "Staying on the prowl for my next career advancement opportunity!",
+      "Staying on the hunt for my next career advancement opportunity!",
     ],
   },
   {
@@ -12,11 +12,10 @@ export default [
     title: "Software Engineer @ SPJ Solutions",
     duration: "2 months",
     details: [
-      "Consolidated and organized all of the styling in the codebase from in-line styles to a CSS library.",
-      "Optimized and cleaned up code created by developers who previously contributed to the codebase.",
-      "Created unit tests in Jest to test various endpoints for valid behavior before deployment.",
-      "Planned and prepared every work day and planned tasks in daily and weekly sprint meetings.",
-      "Completed all planned goals and tickets assigned within the expected time frames.",
+      "Refocused the readability of over 400 components by consolidating in-line styles with Emotion CSS.",
+      "Implemented tests utilizing TypeScript and Jest to validate the data returned from over 30 endpoints.",
+      "Established preparations for plans or tasks in sprint meetings daily with 5 to 19 members via Zoom.",
+      "Demonstrated the ability to complete anticipated goals within assigned time frames.",
     ],
   },
   {
@@ -32,14 +31,13 @@ export default [
   },
   {
     year: "2017",
-    title: "Discord Chatbot Developer",
+    title: "Freelance Chatbot Developer",
     duration: "5 years",
     details: [
-      "Programmed interactive and functional chatbot applications in JavaScript for user entertainment.",
-      "Organized and created plans and feature ideas with a co-developer for features to implement.",
-      "Integrated efficient code that produced visually appealing components for users to see.",
-      "Structured and formatted a MongoDB database that stored over 50,000 profiles used for the bots.",
-      "Converted the entire codebase from JavaScript to C# alongside a database change for a faster API.",
+      "Programmed 3 iterations of interactive and functional chatbots for users on the Discord platform.",
+      "Itemized and managed feature ideas or plans with a co-developer in the style of user requests.",
+      "Designed and oversaw the MongoDB database which stored over 50,000 profiles for users.",
+      "Transformed both the codebase and database while rewriting the bot from JavaScript to C#.",
     ],
   },
 ];
